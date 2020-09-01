@@ -28,13 +28,18 @@ Learning Objectives:
 
 You must not use any libraries or built-in data structures other than arrays and (linked)lists.
 
-    go to the Google folder: https://drive.google.com/drive/folders/1psRIEL65sQCTA7pG6uF8yw5ElVB7vwq3?usp=sharing (Links to an external site.). Choose one of the small-to-medium-sized graph datasets from the datasets sub-folder.  [Enter your BITS ID against the set you have chosen in the spreadsheet:
+    go to the Google folder:
 
-https://docs.google.com/spreadsheets/d/1bh2LzeJhgwUNDscTkOA_RHBXhyf7auB352CjyLpfmE4/edit?usp=sharing (Links to an external site.)]
+https://drive.google.com/drive/folders/1psRIEL65sQCTA7pG6uF8yw5ElVB7vwq3?usp=sharing (Links to an external site.). 
+
+Choose one of the small-to-medium-sized graph datasets from the datasets sub-folder.  [Enter your BITS ID against the set you have chosen in the spreadsheet:
+
 
  Each data set may be chosen by at most three students.
 
     a) Run your program to output the degree distribution and triangle count on your graph.
+
+    For Degree Distribution 20 mins and 2 mins. Counting of traingles is taking too long
 
     b)  Measure the time taken for each of the two computations under each of the three representations. 
     c) Plot the degree distribution curve and do curve fitting to a power-law distribution and determine the constant. You may use any tool to do curve fitting.
