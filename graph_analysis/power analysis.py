@@ -23,11 +23,18 @@ def plot_power_graph(pickle_degrees,file_to_save,text):
         degrees = list(degee_dist.values())
         log_degrees = list(map(math.log,degrees))
         a = np.corrcoef(log_prob_nodes, log_degrees)[0][1]
+        z = np.polyfit(log_prob_nodes, log_degrees,1)
         #Power law is probability that a node has k neighbours is P(k) ~ k ^(-a) lnP(k) ~ -a*lnk
+        plt.subplot(2, 1, 1)
         plt.plot(num_nodes, degrees, 'kx')
         plt.xscale('log')
         plt.yscale('log')
         plt.title(text.format(a))
+        plt.subplot(2, 1, 2)
+        p = np.poly1d(z)
+        xp = np.linspace(min(log_prob_nodes)-0.5,max(log_prob_nodes)+0.5,100)
+        plt.plot(log_prob_nodes, log_degrees, '.', xp, p(xp), '--')
+        plt.title("Log Probability Nodes and Log Degrees Line Fit")
         plt.savefig(file_to_save)
 
 
